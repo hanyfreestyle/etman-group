@@ -1,13 +1,14 @@
-<div class="top-header d-none d-md-block">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-12 col-md-12">
-                <div class="header_topbar_info">
-                    @if($WebConfig->top_offer)
-                        <div class="header_offer">
-                            <span>{{$WebConfig->offer}}</span>
-                        </div>
-                    @endif
+@if($WebConfig->download_app == 1)
+    <div class="top-header d-none d-md-block">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="header_topbar_info">
+                        @if($WebConfig->top_offer)
+                            <div class="header_offer">
+                                <span>{{$WebConfig->offer}}</span>
+                            </div>
+                        @endif
 
                         @if($WebConfig->download_app)
                             <div class="download_wrap">
@@ -29,8 +30,10 @@
                         @endif
 
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+@endif
+
