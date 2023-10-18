@@ -1,0 +1,269 @@
+.border_top{
+    border-top: 5px solid var(--red)!important;
+}
+
+.padding_eight_all {
+    padding: 30px 8%;
+}
+
+.def_form_label{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.def_form_label span{
+ color: var(--red);
+}
+
+.form-note {
+    font-size: 15px!important;
+}
+
+.form-note a{
+    font-weight: bold;
+    color: var(--red);
+
+}
+.span_form_error{
+    color: var(--red);
+    font-size: 14px;
+}
+
+
+
+.profileCard h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--red);
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+
+}
+
+.profileCard .card_but button{
+    float: left;
+    margin-left:0px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+.card_but button ,.card_but a{
+    float: left;
+    margin-left:1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.address_h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+.address_h3 span{
+    font-size: 13px;
+    background: var(--red);
+    padding: 5px 8px;
+    color: #FFFFFF;
+    font-weight: normal;
+    float: left;
+}
+
+
+
+
+.address_h3 .btn_not{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+
+    font-size: 13px;
+    background:#007bff;
+    padding: 5px 8px;
+    color: #FFFFFF;
+    font-weight: normal;
+
+}
+
+
+.Addinfo{
+    margin-bottom: 2px!important;
+    font-size: 15px!important;
+
+}
+
+.Addinfo span{
+    color: var(--red);
+    font-weight: bold;
+}
+
+.print_address{
+    height: 80px;
+    overflow: hidden!important;
+}
+
+.butform{
+    padding: 0!important;
+    background: #0f5132;
+}
+
+
+
+.order_status_but{
+    font-size: 14px;
+    font-weight: normal!important;
+    margin-bottom: 5px;
+    padding: 5px 6px!important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+}
+
+.dashboard_content .table tbody tr:last-child td {
+    padding-bottom: 10px;
+}
+.last_td{
+    padding-bottom: 20px!important;
+
+}
+
+.table > :not(:first-child) {
+    border-top: 2px solid currentColor;
+}
+
+.product-remove a i {
+    height: 30px;
+    width: 30px;
+
+    display: inline-block;
+
+
+    text-align: center;
+    border-radius: 100%;
+    font-size: 14px;
+    background-color: #F00;
+    color: #fff;
+    margin-top: 10px;
+
+}
+.product-remove a i:hover {
+    background-color: #F00;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .table > :not(:first-child) {
+        border-top: 0px solid currentColor;
+    }
+
+    .dashboard_content .table tbody tr {
+      border-top: 3px solid currentColor;
+    }
+    .last_td{
+        padding-bottom: 35px!important;
+
+    }
+
+    .product-remove a i {
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 14px;
+        background-color: #F00;
+        color: #fff;
+        margin-top: 0!important;
+    }
+
+
+
+}
+
+
+
+
+
+.section_confirm{
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+
+.confirm_product_qty{
+    font-family: 'Poppins', sans-serif!important; font-size:14px;
+
+
+
+}
+.confirm_name{
+
+    display: inline-block;
+    max-width: 100%!important;
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap;*/
+    overflow: hidden;
+    height: 25px;
+
+
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width:700px) {
+    .orderViewInfo .confirm_name{
+        width: 150px;
+    }
+
+    .orderViewInfo th{
+         width: 20px!important;
+    }
+
+
+    .dashboard_content .table tbody tr {
+        border-top: 1px solid currentColor;
+    }
+
+    .order_review{
+        max-width: 100%!important;
+    }
+}
+
+
+
+.preloader_cart {
+    background-color: #fff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.error_in_product{
+    background: rgba(248, 215, 218,.5);
+
+}
+
+.no_more_qty{
+    background: rgba(248, 215, 218,.5);
+    font-size: 14px!important;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+
