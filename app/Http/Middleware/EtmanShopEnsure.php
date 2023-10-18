@@ -17,9 +17,9 @@ class EtmanShopEnsure
     public function handle(Request $request, Closure $next): Response
     {
 
-//        if(Auth::check() == false ){
-//            return redirect()->route('Page_HomePage');
-//        }
+        if(Auth::check() == false ){
+            return redirect()->route('Page_HomePage');
+        }
 
         return $next($request);
     }

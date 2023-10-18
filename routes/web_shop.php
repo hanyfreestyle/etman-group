@@ -5,7 +5,7 @@ use App\Http\Controllers\web\ShopPageController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::group(['prefix' => 'EtmanShop'], function(){
+Route::group(['prefix' => 'shop'], function(){
 
     Route::middleware(['EtmanShopEnsure'])->group(function (){
 
