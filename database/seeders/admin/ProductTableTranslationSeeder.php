@@ -5,7 +5,7 @@ namespace Database\Seeders\admin;
 use App\Models\admin\ProductTableTranslation;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class ProductTableTranslationSeeder extends Seeder
 {

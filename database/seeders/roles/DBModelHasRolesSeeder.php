@@ -5,7 +5,7 @@ namespace Database\Seeders\roles;
 use App\Models\roles\DBModelHasRoles;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class DBModelHasRolesSeeder extends Seeder
 {

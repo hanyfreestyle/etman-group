@@ -6,7 +6,7 @@ use App\Models\admin\config\WebPrivacy;
 use App\Models\admin\config\WebPrivacyTranslation;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class WebPrivacyTranslationSeeder extends Seeder
 {

@@ -5,7 +5,7 @@ namespace Database\Seeders\data;
 use App\Models\data\DataCity;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class DataCitySeeder extends Seeder
 {

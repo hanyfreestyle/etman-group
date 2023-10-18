@@ -5,7 +5,7 @@ namespace Database\Seeders\config;
 use App\Models\admin\config\UploadFilterSize;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class UploadFilterSizeSeeder extends Seeder
 {

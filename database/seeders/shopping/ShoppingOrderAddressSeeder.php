@@ -5,7 +5,8 @@ namespace Database\Seeders\shopping;
 use App\Models\shopping\ShoppingOrderAddress;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
+
 
 class ShoppingOrderAddressSeeder extends Seeder
 {

@@ -5,7 +5,7 @@ namespace Database\Seeders\customer;
 use App\Models\customer\UserCustomersProduct;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class UserCustomersProductSeeder extends Seeder
 {

@@ -6,7 +6,7 @@ use App\Models\admin\Product;
 use App\Models\admin\ProductTranslation;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class ProductTranslationSeeder extends Seeder
 {
@@ -17,5 +17,9 @@ class ProductTranslationSeeder extends Seeder
         ProductTranslation::unguard();
         $tablePath = public_path('db/product_translations.sql');
         DB::unprepared(file_get_contents($tablePath));
+
+
+
+
     }
 }

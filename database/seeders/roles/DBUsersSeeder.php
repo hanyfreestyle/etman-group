@@ -5,7 +5,7 @@ namespace Database\Seeders\roles;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class DBUsersSeeder extends Seeder
 {

@@ -5,7 +5,7 @@ namespace Database\Seeders\customer;
 use App\Models\customer\UsersCustomersAddress;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use DB ;
+use Illuminate\Support\Facades\DB;
 
 class UsersCustomersAddressSeeder extends Seeder
 {
