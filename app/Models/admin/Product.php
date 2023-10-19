@@ -42,9 +42,7 @@ class Product extends Model implements TranslatableContract
     public function product_with_category()
     {
         return $this->belongsToMany(Category::class,'product_category','product_id','category_id')
-            ->where('is_active',true)
-            ->where('cat_shop',true);
-
+            ->where('is_active',true);
     }
     public function ProductWithCategory()
     {

@@ -343,12 +343,14 @@ class WebPageController extends WebMainController
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #|||||||||||||||||||||||||||||||||||||| #     WebProductView
     public function WebProductView($catid,$slug){
+
         $catid = intval($catid);
         $slug = \AdminHelper::Url_Slug($slug);
 
         $Category = Category::WebSite_Def_Query()
             ->where('id',$catid)
             ->firstOrFail();
+
 
         $Product  = Product::Website_Shop_Def_Query()
             ->whereTranslation('slug', $slug)
@@ -359,6 +361,8 @@ class WebPageController extends WebMainController
             ->with('table_data')
             ->withCount('table_data')
             ->firstOrFail();
+
+
 
 
 

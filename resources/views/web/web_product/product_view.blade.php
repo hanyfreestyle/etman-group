@@ -26,28 +26,34 @@
 
                 <div class="col-lg-5 col-md-6">
 
+                    @if(count($Product->more_photos) > 0 )
+                        <div class="product-image vertical_gallery">
+                            <div id="pr_item_gallery" class="product_gallery_item slick_slider" data-vertical="true" data-vertical-swiping="true" data-slides-to-show="5" data-slides-to-scroll="1" data-infinite="false">
+                                @foreach($Product->more_photos as $photo)
+                                    <div class="item">
+                                        <a href="#" class="product_gallery_item  @if($loop->index == 0) active @endif" data-image="{{getPhotoPath($photo->photo)}}" data-zoom-image="{{getPhotoPath($photo->photo)}}">
+                                            <img src="{{getPhotoPath($photo->photo_thum_1)}}" alt="product_small_img1" />
+                                        </a>
+                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="product_img_box">
+                                @foreach($Product->more_photos as $photo)
+                                    @if($loop->index == 0)
+                                        <img id="product_img" src='{{getPhotoPath($photo->photo_thum_1)}}' data-zoom-image="{{getPhotoPath($photo->photo)}}" alt="product_img1" />
+                                        <a href="#" class="product_img_zoom" title="Zoom">
+                                            <span class="linearicons-zoom-in"></span>
+                                        </a>
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    @else
+                        <div class="product_img_box text-center">
+                            <img id="product_img" src='{{getPhotoPath($Product->photo,'categorie')}}' />
+                        </div>
+                    @endif
 
-                    <div class="product-image vertical_gallery">
-                        <div id="pr_item_gallery" class="product_gallery_item slick_slider" data-vertical="true" data-vertical-swiping="true" data-slides-to-show="5" data-slides-to-scroll="1" data-infinite="false">
-                            @foreach($Product->more_photos as $photo)
-                                <div class="item">
-                                    <a href="#" class="product_gallery_item  @if($loop->index == 0) active @endif" data-image="{{getPhotoPath($photo->photo)}}" data-zoom-image="{{getPhotoPath($photo->photo)}}">
-                                        <img src="{{getPhotoPath($photo->photo_thum_1)}}" alt="product_small_img1" />
-                                    </a>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="product_img_box">
-                            @foreach($Product->more_photos as $photo)
-                                @if($loop->index == 0)
-                                    <img id="product_img" src='{{getPhotoPath($photo->photo_thum_1)}}' data-zoom-image="{{getPhotoPath($photo->photo)}}" alt="product_img1" />
-                                    <a href="#" class="product_img_zoom" title="Zoom">
-                                        <span class="linearicons-zoom-in"></span>
-                                    </a>
-                                @endif
-                            @endforeach
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-lg-7 col-md-6">

@@ -36,14 +36,19 @@
                     </x-form-select-multiple>
                 </div>
 
+                @if(intval($Product->id) == 0)
+                    <input type="hidden" name="pro_shop" value="0">
+                    <input type="hidden" name="pro_web" value="1">
+                @else
+                    <div class="row">
+                        <x-form-select-arr  label="{{__('admin/shop.pro_addshop')}}" name="pro_shop" colrow="col-lg-3"
+                                            sendvalue="{{old('pro_shop',$Product->pro_shop)}}" select-type="selActive"/>
 
-                <div class="row">
-                    <x-form-select-arr  label="{{__('admin/shop.pro_addshop')}}" name="pro_shop" colrow="col-lg-3"
-                                        sendvalue="{{old('pro_shop',$Product->pro_shop)}}" select-type="selActive"/>
+                        <x-form-select-arr  label="{{__('admin/shop.pro_addweb')}}" name="pro_web" colrow="col-lg-3"
+                                            sendvalue="{{old('pro_web',$Product->pro_web)}}" select-type="selActive"/>
+                    </div>
+                @endif
 
-                    <x-form-select-arr  label="{{__('admin/shop.pro_addweb')}}" name="pro_web" colrow="col-lg-3"
-                                        sendvalue="{{old('pro_web',$Product->pro_web)}}" select-type="selActive"/>
-                </div>
 
 
                 <div class="row">

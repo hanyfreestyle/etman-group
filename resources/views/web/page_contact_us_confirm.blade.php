@@ -25,7 +25,7 @@
 
                             <div class="row">
                                 <div class="col-lg-12 text-center">
-                                    <a href="{{route('Shop_HomePage')}}" class="btn btn-fill-out">
+                                    <a href="{{route('Page_HomePage')}}" class="btn btn-fill-out">
                                         <i class="fa fa-home"></i>
                                         {{__('web/cart.completed_but')}}
                                     </a>

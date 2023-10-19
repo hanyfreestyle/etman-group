@@ -47,20 +47,14 @@
             <div class="col-12">
                 <div class="client_logo carousel_slider owl-carousel owl-theme nav_style3" data-dots="false" data-nav="true" data-margin="30" data-loop="true" data-autoplay="true" data-responsive='{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}}'>
                     @foreach($MenuCategory as $MainCategory)
-
-                        <a href="">
-
+                        <a href="{{route('Page_WebCategoryView',$MainCategory->slug)}}">
                             <div class="item">
                                 <div class="cl_logoX">
                                     <img src="{{ getPhotoPath($MainCategory->photo ,'faq-icon') }}" alt="cl_logo"/>
-
                                 </div>
-
                                 <h3 class="def_h4 text-center mt-3">{{$MainCategory->name}}</h3>
                             </div>
                         </a>
-
-
                     @endforeach
                 </div>
             </div>

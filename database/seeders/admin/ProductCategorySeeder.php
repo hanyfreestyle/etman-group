@@ -21,6 +21,7 @@ class ProductCategorySeeder extends Seeder
             $updateProduct = Product::all();
             foreach ($updateProduct as $Product){
                 $Product->price = null;
+                $Product->ref_code = null;
                 $Product->sale_price = null;
                 $Product->qty_left = null;
                 $Product->qty_max = null;

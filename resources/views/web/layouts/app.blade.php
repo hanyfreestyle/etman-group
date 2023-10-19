@@ -35,6 +35,21 @@
     <link rel="stylesheet" href="{{ defWebAssets('css/custom_style.css') }}">
     <link rel="stylesheet" href="{{ defWebAssets('css/custom_'.thisCurrentLocale().'.css') }}">
     @yield('AddStyle')
+    <style>
+        @media only screen and (max-width: 900px) {
+            .scrollup{
+                bottom: 15px!important;
+            }
+        }
+
+        .menu_social_icons i{
+            line-height: 45px!important;
+        }
+
+        .social_icons_footer i{
+            line-height: 45px!important;
+        }
+    </style>
     @livewireStyles
 </head>
 <body {!! htmlArDir() !!}>

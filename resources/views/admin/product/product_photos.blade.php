@@ -23,7 +23,7 @@
                         <div class="col-lg-2 ListThisItam"  data-index="{{$Photo->id}}" data-position="{{$Photo->postion}}" >
                             <p class="PhotoImageCard"><img src="{{ defImagesDir($Photo->photo) }}"></p>
                             <div class="buttons mb-3" >
-                                @can('product_delete')
+                                @can('product_edit')
                                     <td class="tc"><x-action-button url="#" id="{{route($PrefixRoute.'.More_PhotosDestroy',$Photo->id)}}"  type="deleteSweet"/></td>
                                 @endcan
                             </div>
@@ -41,7 +41,13 @@
     <x-html-section>
         <div class="row">
             <div class="col-lg-12">
-
+                @if($errors->has([]))
+                    <div class="alert alert-danger alert-dismissible">
+                        @foreach($errors->all() as $err)
+                            <li>{{ $err }}</li>
+                        @endforeach
+                    </div>
+                @endif
                 <form  class="mainForm" action="{{route($PrefixRoute.'.More_PhotosAdd')}}" method="post"  enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="product_id" value="{{intval($Product->id)}}">
